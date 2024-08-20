@@ -1104,12 +1104,6 @@ h1 {
 
 @media (max-width: 468px) {
 
-    .logo {
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1rem;
-        font-weight: 800;
-    }
-
     .fa-house {
         font-size: 1rem;
     }
