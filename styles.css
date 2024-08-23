@@ -187,6 +187,7 @@ nav ul li a:hover::after {
   
 .cta {
     position: relative;
+    padding: 11px 15px;
     width: 42px;
     height: 42px;
     border-radius: 50px;
@@ -195,36 +196,12 @@ nav ul li a:hover::after {
     color: #fff;
     transition: width 0.7s;
 }
-.cta:hover {
-    width: 150px;
-    transition: width 0.7s;
+
+.cta .fa-phone:hover {
+    color: #e4e4e4;
 }
-  
-.cta .fa-phone {
-    /* transform: rotate(90deg); */
-    opacity: 1;
-    transition: opacity 0.5s
-}
-  
-.cta:hover .fa-phone {
-    opacity: 0;
-    transition: opacity 0.5s
-}
-  
-.button-text {
-    position: absolute;
-    left: 0;
-    opacity: 0;
-    transition: opacity .5s;
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 600;
-}
-  
-.cta:hover .button-text {
-    opacity: 1;
-    transition: opacity 0.5s
-}
+
+
 
 .container {
     flex: 1;
@@ -1224,6 +1201,14 @@ h1 {
 
     .services-container, .services-container-1, .services-container-2 {
         flex-direction: column;
+    }
+
+    .services-container-1 {
+        padding: 100px 5% 10px 5%;
+    }
+    
+    .services-container-2 {
+        padding: 10px 5% 100px 5%;
     }
 
     .service-column {
