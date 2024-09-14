@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const conMobButton = document.getElementById('but-mob-container')
     const windowSize = screen.width;
 
+
+
     window.addEventListener('scroll', function() {
         if (windowSize < 468 && window.scrollY > 300) {
             conMobButton.style.display = 'block';
@@ -74,19 +76,10 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.classList.toggle('active');
     });
 
-    const carousel = document.querySelector('.carousel');
-    const images = carousel.querySelectorAll('img');
-    let currentIndex = 0;
 
-    function showNextImage() {
-        images[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.add('active');
-    }
 
-    // Start the carousel
-    setInterval(showNextImage, 1500);
-    
+
+
     // Animate footer sections
     gsap.utils.toArray('.footer-container > div').forEach((section, index) => {
         gsap.from(section, {
